@@ -18,7 +18,7 @@
 <body>
 <!-- todo: wire up your home controller -->
 <main role="main" class="page_wrapper">
-    <div class="cover cover--02"> <!-- START OF THE COVER CONTAINER -->
+    <div class="cover cover--02"> <!-- START OF THE COVER CONTAINER TOP-->
     <nav class="header header--02"> <!-- START OF HEADER/NAV -->
         <div class="container header__container">
             <!-- todo: if menu is open hide header__left_box -->
@@ -30,11 +30,10 @@
             <div class="header__right_box">
                 <!-- todo: setup your ng-click to show and hide menu -->
                 <!-- todo: if menu is open hide header__burger_button--black and show menu__closer -->
+                <!-- todo: CODERS CHALLENGE! when menu is open done allow scrolling and add a overlay that covers the content but now the menu and is slightly transparent -->
                 <button type="button"  class="header__burger_button header__burger_button--black"></button>
                 <!-- todo: menu__closer needs to be closed by default -->
                 <button type="button" class="menu__closer"></button>
-
-
             </div>
         </div>
     </nav> <!--END OF HEADER/NAV-->
@@ -47,82 +46,70 @@
             <div class="cover__description_box--02">
                 <span class="cover__description_text--02">If your seeing this your off to a good start! </span>
             </div>
+            <!-- todo: CODERS CHALLENGE! when button clicked scroll page down to next section -->
+            <div class="cover__button_box--09"> <!-- START OF DOWN ARROW BUTTON-->
+                <a href="#" class="cover__button--09 button button--blue button--blue-shadow button--round button--arrow-down">
+                </a>
+            </div> <!-- END OF DOWN ARROW BUTTON-->
         </div>
     </div><!-- END OF INNER COVER CONTAINER -->
     <!-- todo: this is the main site menu it needs to be closed by default. -->
-    <aside class="main__site__menu">
-        <nav>
-            <ul>
-                <li class="clickable">HOME</li>
-                <li class="clickable">CONTACT</li>
-                <li class="clickable">ABOUT</li>
-                <li class="clickable">PROJECTS</li>
-                <li class="clickable">HIRE ME</li>
-            </ul>
-        </nav>
-    </aside>
-</div>  <!-- END OF THE COVER CONTAINER -->
+    <!--<aside class="main__site__menu">-->
+        <!--<nav>-->
+            <!--<ul>-->
+                <!--<li class="clickable">HOME</li>-->
+                <!--<li class="clickable">CONTACT</li>-->
+                <!--<li class="clickable">ABOUT</li>-->
+                <!--<li class="clickable">PROJECTS</li>-->
+                <!--<li class="clickable">HIRE ME</li>-->
+            <!--</ul>-->
+        <!--</nav>-->
+    <!--</aside>-->
+</div>  <!-- END OF THE COVER CONTAINER TOP-->
 
-    <div class="cover cover--02"> <!-- START OF THE COVER CONTAINER -->
-        <div class="container cover__container--02"> <!-- START OF INNER COVER CONTAINER -->
-            <h2 class="cover__title--02"><span class="cover__title_text--02">Lets collect some data </span></h2>
-            <div class="cover__pic_box--02">
-                <img src="img/pictures/pic--two-iphones--invert.png" class="cover__img--02"></div>
-        </div><!-- END OF INNER COVER CONTAINER -->
-
-        <form action="" method="POST" class="cover__form--13">
-            <input type="text" placeholder="Your name" class="cover__form__item--13 input input--gray">
-            <input type="email" placeholder="Your email" required class="cover__form__item--13 input input--gray">
-            <input type="password" placeholder="Password" required class="cover__form__item--13 input input--gray">
-            <button type="submit" class="cover__form__item--13 button button--blue">be first</button>
-        </form>
-
-
-    </div>  <!-- END OF THE COVER CONTAINER -->
-
-    <div class="cover cover--10">
-        <!-- == START OF HEADER 07 ==-->
-        <nav class="header header--07">
-            <div class="container header__container">
-                <div class="header__left_box"><a href="#" title="Home" class="header__logo_box"><img src="img/etc/logo--circle--black.svg" alt="Phoenix UI kit logo" class="header__logo_img"></a></div>
-                <div class="header__center_box">
-                    <ul class="header__menu_list header__item--desktop">
-                        <li class="header__menu_item"><a href="#" class="header__menu_link">about</a></li>
-                        <li class="header__menu_item"><a href="#" class="header__menu_link">tour</a></li>
-                        <li class="header__menu_item"><a href="#" class="header__menu_link">pricing</a></li>
-                        <li class="header__menu_item"><a href="#" class="header__menu_link">blog</a></li>
-                        <li class="header__menu_item"><a href="#" class="header__menu_link">contact</a></li>
-                    </ul>
-                </div>
-                <div class="header__right_box"><a href="#" class="button button--white button--gray-shadow header__item--desktop">sign up</a>
-                    <button type="button" data-menu-index="07" class="header__burger_button header__burger_button--black js-open-menu header__item--mobile"></button>
-                </div>
-            </div>
-        </nav>
-        <!-- == END OF HEADER 07 ==-->
+    <div class="cover cover--10"> <!-- START OF THE COVER CONTAINER MIDDLE-->
         <div class="container">
             <div class="cover__content_box">
-                <h2 class="cover__title cover__title--10"><span class="cover__title_text cover__title_text--10">Time to collect some data</span></h2>
+                <h2 class="cover__title cover__title--10">
+                    <span class="cover__title_text cover__title_text--10">Time to collect some data</span>
+                    <br>
+                    <span class="cover__title_text cover__title_text--sub ">Enter 5 of your favorite websites?</span>
+                </h2>
                 <div class="cover__image_box--10">
-                    <div class="cover__button_box--10">
-                        <button data-popup-target="video" type="button" class="cover__button--10 button button--blue button--blue-shadow button--round button--play-icon js-open-popup"></button>
-                    </div><img src="img/pictures/pic--keyboard-image.png" class="cover__image">
+                    <div class="home__page__form">
+                        <form  class="cover__form--13 home__page__form__inner">
+                            <input type="text" placeholder="Website Title" class="cover__form__item--13 input input--gray">
+                            <input type="url" placeholder="Website Url" required="" class="cover__form__item--13 input input--gray">
+                            <input type="url" placeholder="Website Image Url" required="" class="cover__form__item--13 input input--gray">
+                            <input type="text" placeholder="Why do you like it?" required="" class="cover__form__item--13 input input--gray">
+                            <button type="submit" class="cover__form__item--13 button button--blue">Add Website</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="cover__features_box">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6 col-lg-3 cover__features__item--10">
-                        <h3 class="cover__feature_title">Ready to use</h3><span class="cover__feature_text">Phoenix works perfect in all modern browsers (Chrome, Safari, Firefox etc).</span>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-3 cover__features__item--10">
-                        <h3 class="cover__feature_title">Clean design</h3><span class="cover__feature_text">A combination of the unique layout and material design best practices is what the Phoenix loved for.</span>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-3 cover__features__item--10">
-                        <h3 class="cover__feature_title">bootstrap based</h3><span class="cover__feature_text">Most popular 1170px grid and all the Bootstrap components are at your service.</span>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-3 cover__features__item--10">
-                        <h3 class="cover__feature_title">unique icons</h3><span class="cover__feature_text">Phoenix is an SVG based instrument, meaning all icons  are sharp and look awesome everywhere.</span>
-                    </div>
+
+        </div>
+    </div> <!-- START OF THE COVER CONTAINER MIDDLE-->
+
+
+    <div class="features features--04">
+        <div class="features__container--04">
+            <div class="container">
+                <div style="background-image: url(img/bg/bg--black-bg-man--cropped.jpg)" class="features__box--04 features__box--image--04 features__box--image--left--04"></div>
+                <div class="features__box--04 features__box--left-margin--04">
+                    <h3 class="features__item_title--04">AWWWARDS.com</h3>
+                    <span class="features__item_text features__item_text--04">I like how I can see a bunch of amazing websites in one place </span>
+                    <a href="http://www.awwwards.com" class="button button--blue button--blue-shadow">View Website</a>
+                </div>
+            </div>
+        </div>
+        <div class="features__container--04">
+            <div class="container">
+                <div style="background-image: url(img/bg/bg--black-bg-man--cropped.jpg)" class="features__box--04 features__box--image--04 features__box--image--left--04"></div>
+                <div class="features__box--04 features__box--left-margin--04">
+                    <h3 class="features__item_title--04">AWWWARDS.com</h3>
+                    <span class="features__item_text features__item_text--04">I like how I can see a bunch of amazing websites in one place </span>
+                    <a href="http://www.awwwards.com" class="button button--blue button--blue-shadow">View Website</a>
                 </div>
             </div>
         </div>
