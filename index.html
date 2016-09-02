@@ -9,15 +9,15 @@
     <title>Angular | Day One</title>
 
     <!--STYLES START HERE. RESETS ALWAYS GO FIRST :)-->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="dont-touch/css/reset.css">
+    <link rel="stylesheet" href="dont-touch/css/main.css">
 
     <!--ADD YOUR SCRIPTS BEFORE THE CLOSING BODY TAG-->
 
 </head>
 <body>
 <!-- todo: wire up your home controller -->
-<main role="main" class="page_wrapper">
+<main role="main" class="page_wrapper"> <!--START OF MAIN WRAPPER-->
     <div class="cover cover--02"> <!-- START OF THE COVER CONTAINER TOP-->
     <nav class="header header--02"> <!-- START OF HEADER/NAV -->
         <div class="container header__container">
@@ -40,7 +40,7 @@
 
     <div class="container cover__container--02"> <!-- START OF INNER COVER CONTAINER -->
         <div class="cover__pic_box--02">
-            <img src="img/pictures/pic--two-iphones--invert.png" class="cover__img--02"></div>
+            <img src="dont-touch/img/pictures/pic--two-iphones--invert.png" class="cover__img--02"></div>
         <div class="cover__text_box--02">
             <h2 class="cover__title--02"><span class="cover__title_text--02">Angular Day One </span></h2>
             <div class="cover__description_box--02">
@@ -54,17 +54,17 @@
         </div>
     </div><!-- END OF INNER COVER CONTAINER -->
     <!-- todo: this is the main site menu it needs to be closed by default. -->
-    <!--<aside class="main__site__menu">-->
-        <!--<nav>-->
-            <!--<ul>-->
-                <!--<li class="clickable">HOME</li>-->
-                <!--<li class="clickable">CONTACT</li>-->
-                <!--<li class="clickable">ABOUT</li>-->
-                <!--<li class="clickable">PROJECTS</li>-->
-                <!--<li class="clickable">HIRE ME</li>-->
-            <!--</ul>-->
-        <!--</nav>-->
-    <!--</aside>-->
+    <aside class="main__site__menu">
+        <nav>
+            <ul>
+                <li class="clickable">HOME</li>
+                <li class="clickable">CONTACT</li>
+                <li class="clickable">ABOUT</li>
+                <li class="clickable">PROJECTS</li>
+                <li class="clickable">HIRE ME</li>
+            </ul>
+        </nav>
+    </aside>
 </div>  <!-- END OF THE COVER CONTAINER TOP-->
 
     <div class="cover cover--10"> <!-- START OF THE COVER CONTAINER MIDDLE-->
@@ -87,42 +87,33 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div> <!-- START OF THE COVER CONTAINER MIDDLE-->
-
-
-    <div class="features features--04">
+    <div class="features features--04">  <!-- START OF THE FEATURES CONTAINER -->
+        <!--todo: repeat over your favorite website list-->
         <div class="features__container--04">
             <div class="container">
-                <div style="background-image: url(img/bg/bg--black-bg-man--cropped.jpg)" class="features__box--04 features__box--image--04 features__box--image--left--04"></div>
+                <!--todo: add the image url as the background image-->
+                <div style="background-image: url(dont-touch/img/bg/bg--black-bg-man--cropped.jpg)" class="features__box--04 features__box--image--04 features__box--image--left--04"></div>
                 <div class="features__box--04 features__box--left-margin--04">
+                    <!--todo: add the website title -->
                     <h3 class="features__item_title--04">AWWWARDS.com</h3>
+                    <!--todo: add why you like the website here-->
                     <span class="features__item_text features__item_text--04">I like how I can see a bunch of amazing websites in one place </span>
-                    <a href="http://www.awwwards.com" class="button button--blue button--blue-shadow">View Website</a>
+                    <!--todo: add the link to the website here-->
+                    <a href="" class="button button--blue button--blue-shadow blue--button--top">View Website</a>
+
+                    <!--todo: delete website on click-->
+                    <a href="" class="button button--blue  blue--button--bottom">Delete Website</a>
                 </div>
             </div>
         </div>
-        <div class="features__container--04">
-            <div class="container">
-                <div style="background-image: url(img/bg/bg--black-bg-man--cropped.jpg)" class="features__box--04 features__box--image--04 features__box--image--left--04"></div>
-                <div class="features__box--04 features__box--left-margin--04">
-                    <h3 class="features__item_title--04">AWWWARDS.com</h3>
-                    <span class="features__item_text features__item_text--04">I like how I can see a bunch of amazing websites in one place </span>
-                    <a href="http://www.awwwards.com" class="button button--blue button--blue-shadow">View Website</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-</main>
+    </div>  <!-- END OF THE FEATURES CONTAINER -->
+</main> <!--END OF MAIN WRAPPER-->
 
 
 <!-- SCRIPTS GO HERE -->
+
+
 </body>
 </html>
